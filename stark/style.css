@@ -1,0 +1,628 @@
+/*
+Theme Name: Stark Theme
+Author: Jared Martinez
+Description: Stark is a minimal theme. Its a responsive theme, using the Bootstrap front-end framework. 
+Version: 1.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Tags: blue, white, light, one-column, two-columns, right-sidebar, responsive-layout, custom-header, custom-menu, editor-style, featured-images, microformats, post-formats, rtl-language-support, translation-ready
+Text Domain: Stark
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+*/
+
+/* GOLBAL STYLE SHEET */
+
+/*********************** Page styles ***********************/
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-weight: normal;
+    font-size: 16px;
+    overflow-x: hidden;
+}
+
+h1 {
+    font-family: 'Lobster Two', cursive;
+    display: inline-block;
+    text-align: center;
+    font-size: 400%;
+    width: 100%;
+}
+
+img,
+.size-auto,
+.size-full,
+.size-large,
+.size-medium,
+.size-thumbnail {
+    max-width: 100%;
+    height: auto;
+}
+
+.pagination {
+    margin-bottom: 50px;
+}
+
+.pagination a span {
+    background-color: #fff;
+    color: #337ab7;
+}
+
+.pagination a:hover span {
+    color: #000;
+}
+
+.pagination span {
+    background-color: #fff;
+    color: #337ab7;
+    border: 1px solid #ddd;
+    border-radius: 15px;
+    padding: 3px 8px;
+    border-radius: 5px;
+}
+
+/*********************** header styles ***********************/
+
+.page-heading {
+    margin-top: 120px;
+    margin-bottom: 30px;
+    font-size: 32px;
+}
+
+.page-heading p {
+    margin-top: 40px;
+}
+
+/*********************** Nav bar styles ***********************/
+
+header nav {
+    padding-bottom: 0;
+}
+
+div.navbar-header a.navbar-brand {
+    font-family: 'Lobster Two', cursive;
+    font-size: 350%;
+    color: white;
+    background-color: #009AB7;
+    margin-top: .2em;
+    margin-left: .1em !important;
+    border-radius: 10px;
+}
+
+ul.nav.navbar-nav.navbar-right {
+    background-color: #009AB7;
+    margin-right: .5em;
+    margin-left: .5em;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    border-radius: 10px;
+}
+
+.nav li a {
+    color: white !important;
+    border-radius: 10px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.nav li a:hover {
+    color: black !important;
+    background-color: white !important;
+    text-decoration: underline;
+}
+
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:focus,
+.navbar-default .navbar-nav > .active > a:hover {
+    background-color: #00768C;
+}
+
+/*********************** Featured styles ***********************/
+
+.feature img {
+    width: 100%;
+}
+
+.feature {
+    position: relative;
+}
+
+.feature-text {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    font-size: 0;
+    /* removes the gap between elements that is caused by using inline-block */
+}
+
+.feature-text:before {
+    content: '';
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+}
+
+.feature-text p {
+    display: inline-block;
+    vertical-align: middle;
+    text-align: center;
+    width: 100%;
+    background-color: rgba(74, 82, 95, 0.4);
+    border-radius: 10px;
+    color: #fff;
+    font-size: 48px;
+    text-shadow: 3px 3px 0px black;
+    padding: 3%;
+    line-height: 65px;
+    font-family: 'Lobster Two', cursive;
+}
+
+/*********************** Main styles ***********************/
+
+main {
+    font-family: Arial, sans-serif;
+    color: black;
+}
+
+.color {
+    background-color: #00768C !important;
+    height: 20px !important;
+}
+
+/* Welcome Section */
+
+main section#welcome {
+    font-size: 135%;
+}
+
+main section#welcome h2 {
+    font-family: 'Lobster Two', cursive;
+    font-size: 300%;
+}
+
+section#welcome img {
+    width: 500px;
+    height: 320px;
+    margin-bottom: 1em;
+    border: 5px solid #00768C;
+    border-radius: 20px;
+}
+
+section#welcome p {
+    margin-top: 1em;
+    margin-right: 1em;
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.5;
+}
+
+section#welcome h2 {
+    text-align: center;
+    font-size: 175%;
+    font-weight: bold;
+}
+
+/* Additional information section */
+
+section#add {
+    background-color: #CBF9FF;
+    background-image: url(images/pexels-photo-685530.jpeg);
+}
+
+/* Blog feed */
+
+section#add div.row div.blog {
+    margin-top: 1em;
+    color: #000;
+    background-color: #FFF;
+    border-radius: 20px;
+    margin-bottom: 1em;
+    border: 5px solid #00768C;
+    padding-bottom: 1em;
+}
+
+/* Social media feed */
+
+section#add div.row div.socialfeed {
+    background-color: #FFF;
+    color: #000;
+    margin-bottom: 1em;
+    margin-top: 1em;
+    border-radius: 20px;
+    border: 5px solid #00768C;
+    padding-bottom: 1em;
+}
+
+/* Top row bar */
+
+.testimonial {
+    background-color: #FFF;
+    margin-left: 1.5em;
+    margin-right: 1.5em;
+    border-radius: 20px;
+    margin-top: 1em;
+    border: 5px solid #00768C;
+}
+
+.testimonial a {
+    display: block;
+    margin-left: 3em;
+    margin-right: 0 auto;
+    font-size: 325%;
+    color: #000;
+    font-weight: bold;
+    font-family: 'Lobster Two', cursive;
+}
+
+/*********************** Footer Styles ***********************/
+
+footer {
+    font-family: 'OpenSans', Arial, sans-serif;
+    color: #FFF;
+}
+
+/* Contact block */
+
+footer div.row div.contact {
+    background-color: #009AB7;
+    margin-top: 2em;
+    margin-bottom: 1em;
+    border-radius: 20px;
+    border: 5px solid #00768C;
+}
+
+footer div.row div.contact a {
+    color: white;
+}
+
+/* Social block */
+
+footer div.row div.social {
+    margin-top: 3em;
+    font-size: 150%;
+    padding-left: 3em;
+    color: #000;
+    font-family: 'Lobster Two', cursive;
+}
+
+footer div.row div.social a {
+    color: #000;
+}
+
+footer div.row div.social a:hover {
+    color: aqua;
+}
+
+/* font awesome */
+
+.fas.fa-phone {
+    margin-bottom: 1em;
+}
+
+.fas.fa-map-pin {
+    margin-top: 1em;
+}
+
+.fab.fa-facebook {
+    margin-left: .3em;
+}
+
+/* Bottom nav */
+
+footer div.row div.bottomnav {
+    margin-bottom: 1em;
+    margin-top: 1.5em;
+    font-size: 125%;
+    background-color: #009AB7;
+    border-radius: 20px;
+    padding-left: 0;
+    border: 5px solid #00768C;
+}
+
+footer div.row div.bottomnav ul {
+    display: block;
+}
+
+footer div.row div.bottomnav li {
+    list-style: none;
+    margin-bottom: .4em;
+}
+
+footer div.row div.bottomnav li:first-child {
+    margin-top: .3em
+}
+
+footer div.row div.bottomnav li a {
+    color: #fff;
+}
+
+/* Footer Bottom bar */
+
+div.container-fluid div.row div.bottomfooter {
+    background-color: #00768C;
+    width: 100%;
+    font-family: 'Lobster Two', cursive;
+    padding-bottom: .1em;
+}
+
+.bottomfooter h2 {
+    font-size: 200%;
+    margin-left: .3em;
+}
+
+
+/*********************** Blog styles ***********************/
+
+/* Side Bar */
+
+.blog-sidebar {
+    background-color: #009AB7;
+    color: #FFF;
+    border-radius: 20px;
+    border: 5px solid #00768C;
+    font-size: 125%;
+    margin-bottom: 1em;
+}
+
+.blog-sidebar li a {
+    color: #fff;
+}
+
+.blog-sidebar .list-unstyled li {
+    padding-bottom: 5px;
+}
+
+.blog-sidebar h3 {
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+
+/*********************** About styles  ***********************/
+
+section.about p {
+    text-align: center;
+}
+
+section.about div.row img {
+    margin-top: 5em;
+}
+
+/*********************** Contact styles ***********************/
+
+.one {
+    margin-bottom: 1em;
+}
+
+.contact-sidebar {
+    margin-top: 3em;
+}
+
+.contact-sidebar iframe {
+    display: block;
+    width: 100%;
+    height: 100%;
+
+}
+
+div.clicktosubmit {
+    margin-bottom: 2em;
+    text-align: center;
+}
+
+div.clicktosubmit input {
+    background-color: #009AB7;
+    color: #FFF;
+}
+
+.contactmessage {
+    font-family: 'Lobster Two', cursive;
+    font-size: 300%;
+    text-align: center;
+    text-decoration: underline;
+    margin-bottom: 1em;
+}
+
+.contacttitle {
+    font-family: 'Lobster Two', cursive;
+    font-size: 400%;
+    text-align: center;
+}
+
+/*********************** Additional Styles for Wordpress ***********************/
+
+/*==== AUTHOR INFO ====*/
+
+#author-meta {
+    clear: both;
+    overflow: hidden;
+    width: 90%;
+    margin: 40px auto 80px auto;
+    padding: 10px;
+    border: 1px solid #d6d6d6;
+    border-radius: 4px;
+    background: #f5f5f5;
+}
+
+#author-meta img {
+    float: left;
+    padding: 10px 15px 0 5px;
+}
+
+#author-meta .about-author {
+    margin: 10px 0 0 0;
+    font-weight: bold;
+}
+
+.dropdown-menu {
+    background-color: #009AB7;
+}
+
+.postimage img {
+    width: 500px;
+    height: 320px;
+    margin-bottom: 1em;
+    border: 5px solid #00768C;
+    border-radius: 20px;
+}
+
+form.searchform {
+    padding-top: .5em;
+    overflow: hidden;
+}
+
+form.searchform input {
+    margin-bottom: .5em;
+}
+
+form.searchform input[type='submit'] {
+    background-color: #00768C;
+    border: none;
+}
+
+form.searchform input[type='submit']:hover {
+    background-color: grey;
+}
+
+form.searchform input[type="text"]{
+	color: #000;
+}
+
+h2.blog-post-title{
+	font-family: 'Lobster Two', cursive;
+	font-size: 400%;
+	text-align: center;
+	margin-bottom: 1em;
+}
+
+/*********************** Mobile Responsiveness and Other Media Queries ***********************/
+
+/* used for xs devices, phones */
+
+@media (max-width: 767px) {
+    div.navbar-header a.navbar-brand {
+        margin-bottom: 4px;
+    }
+    .feature {
+        margin-top: 73px;
+    }
+    .feature-text p {
+        font-size: 24px;
+        line-height: 26px;
+    }
+    main section#welcome {
+        font-size: 100%;
+    }
+    main section#welcome p {
+        margin-right: 0;
+    }
+    main section#add {
+        margin-right: 0;
+    }
+    .testimonial a {
+        margin-left: 0;
+        margin-right: 0;
+        font-size: 175%;
+    }
+    .blog {
+        width: 90%;
+        margin-left: 12px;
+    }
+    .socialfeed {
+        width: 90%;
+        margin-left: 12px;
+    }
+    .contact {
+        width: 90%;
+        margin-left: 12px !important;
+    }
+    .social {
+        margin-left: 0 !important;
+    }
+    .bottomnav {
+        width: 90%;
+        margin-left: 12px;
+    }
+    .bottomfooter h2 {
+        font-size: 150%;
+    }
+    ul.nav.navbar-nav.navbar-right {
+        margin-right: 1em;
+        margin-left: 0;
+    }
+}
+
+/* used for sm devices, tablets */
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .feature {
+        margin-top: 73px;
+    }
+    ul.nav.navbar-nav.navbar-right {
+        margin-left: 0;
+        padding-left: 0;
+        margin-right: 2em;
+    }
+    main section#welcome img {
+        margin-left: -1em;
+    }
+    section#add .blog {
+        font-size: 75%;
+    }
+    footer div.row div.contact {
+        margin-left: 1.5em;
+        font-size: 100%;
+        width: 25%;
+    }
+    footer div.row div.social {
+        margin-left: 5em;
+        padding-left: 0;
+        margin-right: 0;
+        width: 25%;
+    }
+    footer div.row div.bottomnav {
+        margin-left: 1em;
+        font-size: 120%;
+        width: 25%;
+    }
+    .testimonial a {
+        font-size: 200%;
+    }
+    footer div.row div.bottomnav li {
+        padding-bottom: 4.5px;
+    }
+}
+
+/* used for md devices, smaller desktops */
+
+@media (min-width: 992px) and (max-width: 1199px) {
+    .feature {
+        margin-top: 20px;
+    }
+    main section#welcome img {
+        margin-left: -1em;
+        margin-top: 2em;
+    }
+    footer div.row div.contact {
+        margin-left: 2em;
+        width: 25%;
+    }
+    footer div.row div.social {
+        margin-left: 4em;
+        padding-left: 2em;
+        width: 25%;
+    }
+    footer div.row div.bottomnav {
+        margin-left: 4em;
+        width: 25%;
+    }
+}
+
+/* used for lg devices, larger desktops */
+
+@media (min-width: 1200px) and (max-width: 1700px) {
+    footer div.row div.social {
+        padding-left: 1em;
+    }
+
+}
